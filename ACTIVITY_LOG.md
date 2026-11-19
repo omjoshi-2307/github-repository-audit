@@ -36,7 +36,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
 - **Branch:** `docs/add-local-development-guide`
 - **Commit:** [`5ff14469c150c0a141d44d5c83cfd60e084187a6`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/5ff14469c150c0a141d44d5c83cfd60e084187a6)
-- **Pull request:** Pending creation in this run.
+- **Pull request:** [#2 — local startup and backend script](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2).
 - **Change:** Add the missing `npm run server` script for the existing Express backend and replace the one-line README with accurate local setup, frontend/backend startup, health/API endpoints, quality-check commands, and Firebase security guidance.
 - **Validation:** Diff inspected; lint/build not executed in this automation environment because no local checkout/runtime is available.
 
