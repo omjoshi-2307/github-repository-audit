@@ -25,7 +25,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `test/backend-health-route`
 - **Commit:** [`20135c55c38eb567f1636feccf5690657971dacc`](https://github.com/omjoshi-2307/CivicLoop/commit/20135c55c38eb567f1636feccf5690657971dacc)
-- **Pull request:** Pending creation in this run.
+- **Pull request:** [#4 — health route regression coverage](https://github.com/omjoshi-2307/CivicLoop/pull/4) (draft; awaiting test execution and project-lead review).
 - **Change:** Add a Node.js test-runner script and a Fastify `inject()` regression test for `GET /health`; document the command and current coverage. No new dependency or database requirement.
 - **Validation:** Test added but not executed; no local checkout/runtime is available in this automation environment.
 
