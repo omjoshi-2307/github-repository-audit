@@ -18,3 +18,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Verify that injected built-in Ollama and OpenAI adapters are configured for the same model selected by deterministic routing. Reject mismatches before provider execution and add parameterized regression coverage for both adapters.
 - **Validation:** Tests added but not executed in this run; no local checkout/runtime is available. Static source inspection only; CI status for the new head remains to be checked.
 
+
+### CivicLoop — Add backend health-route regression coverage
+
+- **Time (Asia/Kolkata):** 19/11/2026, 23:45:56 IST
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `test/backend-health-route`
+- **Commit:** [`20135c55c38eb567f1636feccf5690657971dacc`](https://github.com/omjoshi-2307/CivicLoop/commit/20135c55c38eb567f1636feccf5690657971dacc)
+- **Pull request:** Pending creation in this run.
+- **Change:** Add a Node.js test-runner script and a Fastify `inject()` regression test for `GET /health`; document the command and current coverage. No new dependency or database requirement.
+- **Validation:** Test added but not executed; no local checkout/runtime is available in this automation environment.
+
