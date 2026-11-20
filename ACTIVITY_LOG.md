@@ -64,3 +64,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
 - **Change:** Preserve root `.env` loading with Node's `--env-file-if-exists` option and document the Node version. Reject boolean/object area values in the calculator and cover them with regression cases.
 - **Validation:** `npm test` passed 11 tests; backend syntax checks passed. Full install/build and Firebase integration remain unverified due unavailable network checkout.
+
+
+### JalSanchaeeNavachar — Correct token normalization for unit and soil values
+
+- **Time (Asia/Kolkata):** 20/11/2026, 23:45:06 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [`f90172f60f36ac8984ea3c53d8fbd3791fba7426`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/f90172f60f36ac8984ea3c53d8fbd3791fba7426)
+- **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Corrected a regex escaping error in token normalization. The faulty expression removed the letter `s` rather than whitespace, causing `Sq Ft` and `Sandy` values to fail validation.
+- **Validation:** Reproduced the regression locally (7 passed, 4 failed), corrected the expression, then reran `npm test` with 11/11 tests passing and syntax checks passing.
