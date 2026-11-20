@@ -40,3 +40,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add the missing `npm run server` script for the existing Express backend and replace the one-line README with accurate local setup, frontend/backend startup, health/API endpoints, quality-check commands, and Firebase security guidance.
 - **Validation:** Diff inspected; lint/build not executed in this automation environment because no local checkout/runtime is available.
 
+
+
+## 2026-11-20
+
+### JalSanchaeeNavachar — Remove missing server dependencies and normalize irrigation inputs
+
+- **Time (Asia/Kolkata):** 20/11/2026, 23:41:51 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [`2c2dd5524aa15b082a010f50120daab814a3ac89`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2c2dd5524aa15b082a010f50120daab814a3ac89)
+- **Pull request:** [#2 — local startup and backend script](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Replace Express/CORS/dotenv imports with Node's built-in HTTP server so the documented server command no longer requires missing packages. Extract schedule calculations, normalize crop/season/soil inputs, support acre/hectare/square-foot conversion, validate request bodies, and add HTTP/calculation regression tests.
+- **Validation:** 11 Node tests passed in an isolated local harness; syntax checks passed. Full install/build and Firebase integration were not run because the environment could not reach GitHub for a checkout.
