@@ -85,6 +85,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
 - **Branch:** `fix/irrigation-input-validation-2026-11-20`
 - **Commit:** [`2ee4272532426e846182b37c35e5cbd43b819d9d`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/2ee4272532426e846182b37c35e5cbd43b819d9d)
-- **Pull request:** pending creation
+- **Pull request:** [#2 — validate irrigation planner inputs](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/2)
 - **Change:** Normalize capitalized season/soil selections, convert hectares and square feet to acres, reject non-positive/non-numeric areas and unsupported selections, return input validation errors as HTTP 400, and add a Node test command with regression coverage.
 - **Validation:** 5 Node tests passed in an isolated harness; calculator and controller syntax checks passed. Full backend integration was not run because no checkout/dependencies were available.
