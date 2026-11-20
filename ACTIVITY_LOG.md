@@ -53,3 +53,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — local startup and backend script](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
 - **Change:** Replace Express/CORS/dotenv imports with Node's built-in HTTP server so the documented server command no longer requires missing packages. Extract schedule calculations, normalize crop/season/soil inputs, support acre/hectare/square-foot conversion, validate request bodies, and add HTTP/calculation regression tests.
 - **Validation:** 11 Node tests passed in an isolated local harness; syntax checks passed. Full install/build and Firebase integration were not run because the environment could not reach GitHub for a checkout.
+
+
+### JalSanchaeeNavachar — Preserve environment-file startup and tighten area validation
+
+- **Time (Asia/Kolkata):** 20/11/2026, 23:44:12 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [`6ff566338729ea0bac1458a3bd7ec98832702472`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/6ff566338729ea0bac1458a3bd7ec98832702472)
+- **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Preserve root `.env` loading with Node's `--env-file-if-exists` option and document the Node version. Reject boolean/object area values in the calculator and cover them with regression cases.
+- **Validation:** `npm test` passed 11 tests; backend syntax checks passed. Full install/build and Firebase integration remain unverified due unavailable network checkout.
