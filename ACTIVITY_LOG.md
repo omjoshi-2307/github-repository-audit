@@ -94,7 +94,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Portfolio — Make email copying reliable and testable
 
-- **Time (Asia/Kolkata):** 21/11/2026, 23:58:35 IST (activity recorded)
+- **Time (Asia/Kolkata):** 21/11/2026, 23:58:27 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
 - **Branch:** `fix/copy-email-clipboard-fallback-20261121`
 - **Commit:** [`ec9a07d2710274c286b2175b64679457bbef431a`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/ec9a07d2710274c286b2175b64679457bbef431a)
