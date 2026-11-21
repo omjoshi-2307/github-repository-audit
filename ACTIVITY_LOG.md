@@ -127,3 +127,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** Pending creation after diff review.
 - **Change:** Correct the README's 20 cm threshold to the actual `distance <= 15` code condition and document the real servo scan positions (50° right, 170° left, 115° center) and reverse/scan behavior.
 - **Validation:** Documentation cross-checked against `Software/code.cpp`; hardware behavior and Arduino compilation not tested in this environment.
+
+
+### WALL-E — Correct motor-shield documentation and restore contributor link
+
+- **Time (Asia/Kolkata):** 22/11/2026, 00:02:19 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
+- **Branch:** `docs/align-walle-obstacle-scan-20261122`
+- **Commit:** [`ac101c52302603ccae26f4312c1b7dafcd368187`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/ac101c52302603ccae26f4312c1b7dafcd368187)
+- **Pull request:** Pending creation after final diff review.
+- **Change:** Correct the motor-driver component row to match the AFMotor library used by `Software/code.cpp` and restore the Sarthak Ghogare LinkedIn URL spelling that was accidentally altered in the first README commit.
+- **Validation:** Cross-checked against the Arduino source and original README. Hardware/Arduino compilation not performed.
