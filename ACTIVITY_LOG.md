@@ -135,6 +135,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
 - **Branch:** `docs/align-walle-obstacle-scan-20261122`
 - **Commit:** [`ac101c52302603ccae26f4312c1b7dafcd368187`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/ac101c52302603ccae26f4312c1b7dafcd368187)
-- **Pull request:** Pending creation after final diff review.
+- **Pull request:** [#4 — align WALL-E README with Arduino behavior](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/4).
 - **Change:** Correct the motor-driver component row to match the AFMotor library used by `Software/code.cpp` and restore the Sarthak Ghogare LinkedIn URL spelling that was accidentally altered in the first README commit.
 - **Validation:** Cross-checked against the Arduino source and original README. Hardware/Arduino compilation not performed.
