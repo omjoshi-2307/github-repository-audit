@@ -114,3 +114,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
 - **Change:** Avoid UTC date conversion shifting a local schedule date backward near midnight. Format dates from local year/month/day values and add a regression test for the UTC boundary at 00:15 IST.
 - **Validation:** 6/6 irrigation-calculator tests passed under `TZ=Asia/Kolkata` in an isolated Node 22.16.0 harness. Full integration remains unverified.
+
+
+## 2026-11-22
+
+### WALL-E — Align obstacle threshold and scan-angle documentation
+
+- **Time (Asia/Kolkata):** 22/11/2026, 00:01:40 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
+- **Branch:** `docs/align-walle-obstacle-scan-20261122`
+- **Commit:** [`5ce749f4faf2e4d5ea9af049da6f84eda4c0a01f`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/5ce749f4faf2e4d5ea9af049da6f84eda4c0a01f)
+- **Pull request:** Pending creation after diff review.
+- **Change:** Correct the README's 20 cm threshold to the actual `distance <= 15` code condition and document the real servo scan positions (50° right, 170° left, 115° center) and reverse/scan behavior.
+- **Validation:** Documentation cross-checked against `Software/code.cpp`; hardware behavior and Arduino compilation not tested in this environment.
