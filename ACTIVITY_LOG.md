@@ -88,3 +88,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — validate irrigation planner inputs](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/2)
 - **Change:** Normalize capitalized season/soil selections, convert hectares and square feet to acres, reject non-positive/non-numeric areas and unsupported selections, return input validation errors as HTTP 400, and add a Node test command with regression coverage.
 - **Validation:** 5 Node tests passed in an isolated harness; calculator and controller syntax checks passed. Full backend integration was not run because no checkout/dependencies were available.
+
+
+## 2026-11-21
+
+### Portfolio — Make email copying reliable and testable
+
+- **Time (Asia/Kolkata):** 21/11/2026, 23:58:35 IST (activity recorded)
+- **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
+- **Branch:** `fix/copy-email-clipboard-fallback-20261121`
+- **Commit:** [`ec9a07d2710274c286b2175b64679457bbef431a`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/ec9a07d2710274c286b2175b64679457bbef431a)
+- **Pull request:** Pending creation after diff review.
+- **Change:** Extract clipboard copying into a browser helper; fall back when the secure Clipboard API rejects; treat `execCommand('copy')` returning false as failure; ensure temporary textarea cleanup with `finally`; add four focused Node tests; include them in the existing test command; and clear/reuse the copied-state timer to prevent premature feedback reset and timer leaks.
+- **Validation:** Four isolated Node 22.16.0 tests passed. Full portfolio test suite, lint, and production build were not run because dependencies and checkout are unavailable.
