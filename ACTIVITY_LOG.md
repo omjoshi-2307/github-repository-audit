@@ -98,6 +98,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
 - **Branch:** `fix/copy-email-clipboard-fallback-20261121`
 - **Commit:** [`ec9a07d2710274c286b2175b64679457bbef431a`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/ec9a07d2710274c286b2175b64679457bbef431a)
-- **Pull request:** Pending creation after diff review.
+- **Pull request:** [#1 — clipboard copy reliability](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/1).
 - **Change:** Extract clipboard copying into a browser helper; fall back when the secure Clipboard API rejects; treat `execCommand('copy')` returning false as failure; ensure temporary textarea cleanup with `finally`; add four focused Node tests; include them in the existing test command; and clear/reuse the copied-state timer to prevent premature feedback reset and timer leaks.
 - **Validation:** Four isolated Node 22.16.0 tests passed. Full portfolio test suite, lint, and production build were not run because dependencies and checkout are unavailable.
