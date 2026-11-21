@@ -101,3 +101,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#1 — clipboard copy reliability](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/1).
 - **Change:** Extract clipboard copying into a browser helper; fall back when the secure Clipboard API rejects; treat `execCommand('copy')` returning false as failure; ensure temporary textarea cleanup with `finally`; add four focused Node tests; include them in the existing test command; and clear/reuse the copied-state timer to prevent premature feedback reset and timer leaks.
 - **Validation:** Four isolated Node 22.16.0 tests passed. Full portfolio test suite, lint, and production build were not run because dependencies and checkout are unavailable.
+
+
+## 2026-11-22
+
+### JalSanchaeeNavachar — Keep irrigation schedule dates in the local calendar
+
+- **Time (Asia/Kolkata):** 22/11/2026, 00:00:35 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [`45eeeabc3d2e33f896325d448eb2a29ac40eee72`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/45eeeabc3d2e33f896325d448eb2a29ac40eee72)
+- **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Avoid UTC date conversion shifting a local schedule date backward near midnight. Format dates from local year/month/day values and add a regression test for the UTC boundary at 00:15 IST.
+- **Validation:** 6/6 irrigation-calculator tests passed under `TZ=Asia/Kolkata` in an isolated Node 22.16.0 harness. Full integration remains unverified.
