@@ -151,3 +151,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add own-property checks to calculator selection maps, reject non-finite area/water calculations, and return a 400 for malformed request targets instead of allowing URL parsing to throw from the request handler. Add regression coverage for inherited keys, numeric overflow, and malformed HTTP request targets.
 - **Validation:** A local mirrored Node harness passed 15/15 tests. During verification of the exact GitHub branch content, the malformed-request-target test's escape sequences were found to be over-escaped; a corrective follow-up commit is being prepared. Exact branch test execution is pending; no Firebase integration was run.
 
+
+
+### JalSanchaeeNavachar — Correct malformed request-target test escaping
+
+- **Time (Asia/Kolkata):** 22/11/2026, 23:12:31 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [e1ccb8c37690f31be9f66561af521b3b61783219](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/e1ccb8c37690f31be9f66561af521b3b61783219)
+- **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Correct the raw HTTP test's escape sequences so the malformed request is transmitted with actual CRLF delimiters and the 400 response assertion is a valid regex.
+- **Validation:** The corrected request-target test passed in the local Node harness; all 15 calculator/HTTP tests passed. Exact Firebase integration remains unverified.
