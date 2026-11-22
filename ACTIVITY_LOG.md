@@ -149,7 +149,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`e65ec1c1873cfd92171286a739a5a10db057209a`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/e65ec1c1873cfd92171286a739a5a10db057209a)
 - **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
 - **Change:** Add own-property checks to calculator selection maps, reject non-finite area/water calculations, and return a 400 for malformed request targets instead of allowing URL parsing to throw from the request handler. Add regression coverage for inherited keys, numeric overflow, and malformed HTTP request targets.
-- **Validation:** A local mirrored Node harness passed 15/15 tests. During verification of the exact GitHub branch content, the malformed-request-target test's escape sequences were found to be over-escaped; a corrective follow-up commit is being prepared. Exact branch test execution is pending; no Firebase integration was run.
+- **Validation:** A local mirrored Node harness passed 15/15 tests after the raw HTTP test was corrected in follow-up commit [e1ccb8c](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/e1ccb8c37690f31be9f66561af521b3b61783219). The corrected test file was inspected on the PR branch; full Firebase integration was not run.
 
 
 
