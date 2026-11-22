@@ -138,3 +138,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#4 — align WALL-E README with Arduino behavior](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/4).
 - **Change:** Correct the motor-driver component row to match the AFMotor library used by `Software/code.cpp` and restore the Sarthak Ghogare LinkedIn URL spelling that was accidentally altered in the first README commit.
 - **Validation:** Cross-checked against the Arduino source and original README. Hardware/Arduino compilation not performed.
+
+## 2026-11-22
+
+### JalSanchaeeNavachar — Harden irrigation validation and request URL handling
+
+- **Time (Asia/Kolkata):** 22/11/2026, 23:10:44 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `docs/add-local-development-guide`
+- **Commit:** [`e65ec1c1873cfd92171286a739a5a10db057209a`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/e65ec1c1873cfd92171286a739a5a10db057209a)
+- **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
+- **Change:** Add own-property checks to calculator selection maps, reject non-finite area/water calculations, and return a 400 for malformed request targets instead of allowing URL parsing to throw from the request handler. Add regression coverage for inherited keys, numeric overflow, and malformed HTTP request targets.
+- **Validation:** A local mirrored Node harness passed 15/15 tests. During verification of the exact GitHub branch content, the malformed-request-target test's escape sequences were found to be over-escaped; a corrective follow-up commit is being prepared. Exact branch test execution is pending; no Firebase integration was run.
+
