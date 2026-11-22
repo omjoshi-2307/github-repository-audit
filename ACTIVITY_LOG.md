@@ -162,3 +162,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — backend startup and irrigation validation](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/2) (existing PR updated)
 - **Change:** Correct the raw HTTP test's escape sequences so the malformed request is transmitted with actual CRLF delimiters and the 400 response assertion is a valid regex.
 - **Validation:** The corrected request-target test passed in the local Node harness; all 15 calculator/HTTP tests passed. Exact Firebase integration remains unverified.
+
+
+## 2026-11-22
+
+### Jal-Sanchaee-Navachar — Fix irrigation-service syntax and reject inherited keys/overflow
+
+- **Time (Asia/Kolkata):** 22/11/2026, 23:13:53 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/irrigation-input-validation-2026-11-20`
+- **Commit:** [3500888fc1ea3089f1f835e41b22a8ffa69363f4](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/3500888fc1ea3089f1f835e41b22a8ffa69363f4)
+- **Pull request:** [#2 — validate irrigation planner inputs](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/2) (existing PR updated)
+- **Change:** Fix escaped template literal that prevented the irrigation service from parsing, validate unit and season lookup keys as own properties, reject area conversion and water-total overflow, and add regression tests.
+- **Validation:** 7/7 Node tests passed in an isolated harness. Firebase/controller integration was not run.
