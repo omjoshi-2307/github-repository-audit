@@ -199,3 +199,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** Not yet opened; branch targets `main`.
 - **Change:** Validate the farmer list, Firestore document IDs, and positive finite `litres_day` values before scheduling. Allocate at least one whole minute for each positive request and round up to avoid under-allocating pump time. Add Node built-in regression tests and replace the placeholder backend test script.
 - **Validation:** Tests added; execution pending in this run.
+
+
+- **Follow-up commit (24/11/2026, 00:03:02 IST):** [`ab0a993db1f15605cd8acd4aa24cf3baad03a1a9`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/ab0a993db1f15605cd8acd4aa24cf3baad03a1a9) — corrected the FIFO capacity regression fixture after its first local execution showed that the original 11,000 L case exactly fit the remaining 60-minute window. The fixture now uses 11,500 L so the following 1,000 L farmer correctly remains unscheduled. Validation rerun pending.
