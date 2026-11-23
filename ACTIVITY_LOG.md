@@ -188,3 +188,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#5 — DEV Stage 2 Task 3: Implement Chat Orchestrator](https://github.com/omjoshi-2307/Dev/pull/5) (existing PR updated)
 - **Change:** Require exact trusted HTTPX transport classes for local Ollama requests and the exact direct httpcore connection-pool class. Reject subclasses that can override transport execution or routing. Add regression tests for subclassed AsyncHTTPTransport and MockTransport.
 - **Validation:** Regression tests added; execution pending in this run. Existing PR test results predate this change.
+
+
+### Jal-Sanchaee-Navachar — Validate farmer demand and allocate whole-minute irrigation slots
+
+- **Time (Asia/Kolkata):** 24/11/2026, 00:02:11 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/validate-daily-irrigation-schedule`
+- **Commit:** [`27a64d338c496060d00364c74594514eb2de4319`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/27a64d338c496060d00364c74594514eb2de4319)
+- **Pull request:** Not yet opened; branch targets `main`.
+- **Change:** Validate the farmer list, Firestore document IDs, and positive finite `litres_day` values before scheduling. Allocate at least one whole minute for each positive request and round up to avoid under-allocating pump time. Add Node built-in regression tests and replace the placeholder backend test script.
+- **Validation:** Tests added; execution pending in this run.
