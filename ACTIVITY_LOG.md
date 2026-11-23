@@ -175,3 +175,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — validate irrigation planner inputs](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/2) (existing PR updated)
 - **Change:** Fix escaped template literal that prevented the irrigation service from parsing, validate unit and season lookup keys as own properties, reject area conversion and water-total overflow, and add regression tests.
 - **Validation:** 7/7 Node tests passed in an isolated harness. Firebase/controller integration was not run.
+
+
+## 2026-11-23
+
+### Dev — Reject custom transport subclasses for local-only Ollama traffic
+
+- **Time (Asia/Kolkata):** 23/11/2026, 23:59:36 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `feature/stage-2-chat-orchestrator`
+- **Commit:** [`428cf6f3c6906c36483ec83b43ddb42c86f1a413`](https://github.com/omjoshi-2307/Dev/commit/428cf6f3c6906c36483ec83b43ddb42c86f1a413)
+- **Pull request:** [#5 — DEV Stage 2 Task 3: Implement Chat Orchestrator](https://github.com/omjoshi-2307/Dev/pull/5) (existing PR updated)
+- **Change:** Require exact trusted HTTPX transport classes for local Ollama requests and the exact direct httpcore connection-pool class. Reject subclasses that can override transport execution or routing. Add regression tests for subclassed AsyncHTTPTransport and MockTransport.
+- **Validation:** Regression tests added; execution pending in this run. Existing PR test results predate this change.
