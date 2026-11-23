@@ -206,3 +206,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (24/11/2026, 00:03:42 IST):** [`0cd63e8421443fa1adb71cc3db5b75d391692557`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/0cd63e8421443fa1adb71cc3db5b75d391692557) — reused the existing `minutesToTimeString` helper from `backend/utils/dateUtils.js` instead of introducing a duplicate formatter. Validation rerun pending.
+
+
+- **Follow-up commit (24/11/2026, 00:07:08 IST):** [`ccf8d932d71b14e8558a621c2bb6000bab1b9320`](https://github.com/omjoshi-2307/Dev/commit/ccf8d932d71b14e8558a621c2bb6000bab1b9320) — reject non-empty or unverifiable HTTPX request/response event-hook lists on injected local Ollama clients, and add parameterized regression tests. This addresses a further Codex P1 finding that hooks could forward local-only request or response content.
