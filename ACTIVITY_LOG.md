@@ -187,7 +187,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`428cf6f3c6906c36483ec83b43ddb42c86f1a413`](https://github.com/omjoshi-2307/Dev/commit/428cf6f3c6906c36483ec83b43ddb42c86f1a413)
 - **Pull request:** [#5 — DEV Stage 2 Task 3: Implement Chat Orchestrator](https://github.com/omjoshi-2307/Dev/pull/5) (existing PR updated)
 - **Change:** Require exact trusted HTTPX transport classes for local Ollama requests and the exact direct httpcore connection-pool class. Reject subclasses that can override transport execution or routing. Add regression tests for subclassed AsyncHTTPTransport and MockTransport.
-- **Validation:** Regression tests added; execution pending in this run. Existing PR test results predate this change.
+- **Validation:** Focused isolated validator harness using HTTPX 0.28.1 passed 5/5 checks (exact direct and Mock transports accepted; custom subclasses and explicit proxy transport rejected). The committed pytest file and full repository suite were not executed in this environment.
 
 
 ### Jal-Sanchaee-Navachar — Validate farmer demand and allocate whole-minute irrigation slots
