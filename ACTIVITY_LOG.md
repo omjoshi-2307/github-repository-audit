@@ -202,3 +202,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (24/11/2026, 00:03:02 IST):** [`ab0a993db1f15605cd8acd4aa24cf3baad03a1a9`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/ab0a993db1f15605cd8acd4aa24cf3baad03a1a9) — corrected the FIFO capacity regression fixture after its first local execution showed that the original 11,000 L case exactly fit the remaining 60-minute window. The fixture now uses 11,500 L so the following 1,000 L farmer correctly remains unscheduled. Validation rerun pending.
+
+
+- **Follow-up commit (24/11/2026, 00:03:42 IST):** [`0cd63e8421443fa1adb71cc3db5b75d391692557`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/0cd63e8421443fa1adb71cc3db5b75d391692557) — reused the existing `minutesToTimeString` helper from `backend/utils/dateUtils.js` instead of introducing a duplicate formatter. Validation rerun pending.
