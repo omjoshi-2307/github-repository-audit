@@ -251,7 +251,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Dev — Exercise non-finite Retry-After values through the provider retry loop
 
-- **Time (Asia/Kolkata):** 24/11/2026, 24/11/2026, 23:43:35 IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 24/11/2026, 23:43:35 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
 - **Branch:** `fix/non-finite-retry-after-20261124`
 - **Commit:** [`9e6340a22770ce68bfc5daa9eff68cfb598f6bd1`](https://github.com/omjoshi-2307/Dev/commit/9e6340a22770ce68bfc5daa9eff68cfb598f6bd1)
