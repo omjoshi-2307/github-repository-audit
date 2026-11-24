@@ -235,3 +235,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 24/11/2026, 23:23:43 IST.
 - **Change:** The backend README instructed contributors to copy `.env.example` to `.env`, but the development and production scripts did not load that file. Use Node's built-in `--env-file-if-exists` option for both scripts, preserve shell-provided environment variable precedence, and document the behavior without adding a dependency.
 - **Validation:** Confirmed with Node.js 22.16.0 that `.env` values are absent without the flag and loaded with `--env-file-if-exists`. Updated `package.json` parsed successfully; both scripts contain the env-file flag. Node.js 22.16.0 confirmed env-file loading and shell-variable precedence. Full typecheck/build/tests not run because dependencies are not installed.
+
+
+### Dev — Fall back safely for non-finite OpenAI Retry-After headers
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:28:53 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `fix/non-finite-retry-after-20261124`
+- **Commit:** [`26767644fac72277569f5ecc9773162b2fb84df7`](https://github.com/omjoshi-2307/Dev/commit/26767644fac72277569f5ecc9773162b2fb84df7)
+- **Pull request:** Pending validation and diff review.
+- **Change:** Reject non-finite numeric `Retry-After` values before clamping. A header such as `NaN` previously produced a NaN sleep duration, causing `asyncio.sleep` to raise `ValueError` instead of using the bounded exponential backoff. Add parameterized regression coverage for `NaN`, `Infinity`, and `-Infinity`.
+- **Validation:** Reproduced that `asyncio.sleep(float("nan"))` raises `ValueError`. Post-change provider tests pending.
