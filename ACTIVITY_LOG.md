@@ -296,3 +296,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (Asia/Kolkata):** 24/11/2026, 23:52:00 IST — [`4e766af3bb180edf26cc49ebc54d49d65827728b`](https://github.com/omjoshi-2307/CivicLoop/commit/4e766af3bb180edf26cc49ebc54d49d65827728b) corrected regex and newline escaping in the env-file regression test so it matches the actual script flag and writes a valid temporary `.env` file. Validation rerun after correction: 2/2 isolated Node.js 22.16.0 tests passed against the corrected test source.
+
+
+- **Follow-up commit (Asia/Kolkata):** 24/11/2026, 23:57:04 IST — [`7d43a580ad2f746fdb0b9a854c8d544b4966e1c5`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/7d43a580ad2f746fdb0b9a854c8d544b4966e1c5) addresses Codex P2 review feedback on PR #5: the browser now sends its IANA time zone, the backend validates it and computes weekly calendar dates in that zone without relying on the server's local time zone, and tests cover Asia/Kolkata versus UTC plus invalid zones. Validation: 9/9 isolated Node.js 22.16.0 irrigation-service tests passed. Full Firebase integration was not run.
