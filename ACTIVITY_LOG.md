@@ -266,6 +266,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
 - **Branch:** `fix/local-calendar-schedule-dates-20261124`
 - **Commit:** [`512ced1f22af3a085857ea9baa279000f5fc6a83`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/512ced1f22af3a085857ea9baa279000f5fc6a83)
-- **Pull request:** Pending diff inspection and creation.
+- **Pull request:** [#5 — preserve local calendar dates in weekly irrigation schedules](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/5).
+- **PR opened (Asia/Kolkata):** 24/11/2026, 23:46:21 IST.
 - **Change:** Replace UTC ISO-date slicing with local year/month/day formatting after advancing each weekly schedule date. This prevents a schedule generated shortly after local midnight in India from displaying the previous UTC calendar day. Add a timezone-specific regression test for 00:15 IST.
 - **Validation:** 8/8 isolated Node.js 22.16.0 tests passed under a UTC process, including a regression case that switches to Asia/Kolkata and verifies all four weekly dates. Full Firebase integration was not run.
