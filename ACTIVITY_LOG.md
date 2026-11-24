@@ -243,6 +243,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
 - **Branch:** `fix/non-finite-retry-after-20261124`
 - **Commit:** [`26767644fac72277569f5ecc9773162b2fb84df7`](https://github.com/omjoshi-2307/Dev/commit/26767644fac72277569f5ecc9773162b2fb84df7)
-- **Pull request:** Pending validation and diff review.
+- **Pull request:** [#6 — ignore non-finite Retry-After values](https://github.com/omjoshi-2307/Dev/pull/6).
+- **PR opened (Asia/Kolkata):** 24/11/2026, 23:30:19 IST.
 - **Change:** Reject non-finite numeric `Retry-After` values before clamping. A header such as `NaN` previously produced a NaN sleep duration, causing `asyncio.sleep` to raise `ValueError` instead of using the bounded exponential backoff. Add parameterized regression coverage for `NaN`, `Infinity`, and `-Infinity`.
-- **Validation:** Reproduced that `asyncio.sleep(float("nan"))` raises `ValueError`. Post-change provider tests pending.
+- **Validation:** Reproduced that `asyncio.sleep(float("nan"))` raises `ValueError`. 3/3 isolated retry-delay checks passed for non-finite values, valid numeric clamping, and malformed-header fallback. Full `tests/test_providers.py` suite not run because a complete repository checkout is unavailable.
