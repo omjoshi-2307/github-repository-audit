@@ -308,6 +308,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `fix/validate-backend-server-config-20261125`
 - **Commit:** [`1246b80fd74967d7246ddfc5d486e5d38bbaf948`](https://github.com/omjoshi-2307/CivicLoop/commit/1246b80fd74967d7246ddfc5d486e5d38bbaf948)
-- **Pull request:** To be recorded after PR creation.
+- **Pull request:** [#6 — validate backend server environment configuration](https://github.com/omjoshi-2307/CivicLoop/pull/6).
+- **PR opened (Asia/Kolkata):** 25/11/2026, 00:11:17 IST.
 - **Change:** Extract backend port, host, and Fastify log-level parsing into a pure configuration helper. Reject malformed, fractional, non-finite, and out-of-range ports rather than silently falling back to port 3000; validate supported log levels and preserve the existing defaults. Add focused regression tests and wire the validated configuration into server startup.
 - **Validation:** 4/4 isolated Node.js 22.16.0 tests passed using Node's experimental TypeScript type stripping. Full `tsx --test`, TypeScript build/typecheck, and backend integration were not run because project dependencies are not installed in this execution environment.
