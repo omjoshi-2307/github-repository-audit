@@ -333,3 +333,5 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** To be recorded after PR creation.
 - **Change:** Move the unreachable 100 ms delay in `lookLeft()` before its return and add the same post-center settling delay to `lookRight()`. Both scan helpers now allow the servo to begin returning to its 115-degree center position before the next movement or scan command.
 - **Validation:** 2/2 host-side C++ stub timing assertions passed with g++ 14.2.0 and warnings-as-errors. The harness verified the right/left servo command sequence and delay placement. Arduino library compilation and physical robot testing were not available.
+
+- **Follow-up commit (Asia/Kolkata):** 25/11/2026, 00:16:34 IST — [`8bd224f0701fab4486c7708f6812ba7a09d4eb39`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/8bd224f0701fab4486c7708f6812ba7a09d4eb39) adds an HTTP regression test for the existing 100 KiB request-body limit. It verifies oversized JSON requests receive HTTP 413 and never reach the persistence callback. Validation rerun: 9/9 HTTP server tests passed on Node.js 22.16.0 in the isolated backend harness.
