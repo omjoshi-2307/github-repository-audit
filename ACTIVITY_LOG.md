@@ -223,3 +223,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 24/11/2026, 23:18:36 IST.
 - **Change:** Replace `Array#forEach` validation with indexed iteration so sparse array slots are checked instead of skipped. A sparse farmer list previously passed validation and then threw an untyped `TypeError` during schedule generation; it now raises `ScheduleInputError` with the invalid index. Add a regression test.
 - **Validation:** The sparse-array failure was reproduced against the pre-change implementation. 6/6 focused Node.js 22.16.0 tests passed after the fix; `node --check` passed for the scheduler and test file.
+
+
+### CivicLoop — Load backend environment files in development and production scripts
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:21:36 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `fix/load-backend-env-file-20261124`
+- **Commit:** [`05aadb7428b82edea01ec9896d5ba6e4158be411`](https://github.com/omjoshi-2307/CivicLoop/commit/05aadb7428b82edea01ec9896d5ba6e4158be411)
+- **Pull request:** Pending creation after script validation and diff review.
+- **Change:** The backend README instructed contributors to copy `.env.example` to `.env`, but the development and production scripts did not load that file. Use Node's built-in `--env-file-if-exists` option for both scripts, preserve shell-provided environment variable precedence, and document the behavior without adding a dependency.
+- **Validation:** Confirmed with Node.js 22.16.0 that `.env` values are absent without the flag and loaded with `--env-file-if-exists`. Package JSON parse and script execution checks pending.
