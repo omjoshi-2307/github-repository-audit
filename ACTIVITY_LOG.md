@@ -278,6 +278,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
 - **Branch:** `fix/water-calculation-input-validation-20261124`
 - **Commit:** [`33b0aa67d1a64255c2f16d1f0e3566ed1a3a5a57`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/33b0aa67d1a64255c2f16d1f0e3566ed1a3a5a57)
-- **Pull request:** Pending diff inspection and creation.
+- **Pull request:** [#6 — validate crop coefficient and water calculations](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/6).
+- **PR opened (Asia/Kolkata):** 24/11/2026, 23:49:49 IST.
 - **Change:** Use own-property checks for crop/stage coefficient lookups, preserve the mid-stage fallback for unknown stages, and reject negative, non-numeric, non-finite, or overflowing evapotranspiration and water-volume calculations. Add a dedicated Node test file for the exported water-calculation helpers.
 - **Validation:** 7/7 isolated Node.js 22.16.0 tests passed, covering normal coefficients, inherited keys, invalid inputs, and numeric overflow. Full Firebase integration was not run.
