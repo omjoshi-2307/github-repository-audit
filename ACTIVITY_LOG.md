@@ -270,3 +270,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 24/11/2026, 23:46:21 IST.
 - **Change:** Replace UTC ISO-date slicing with local year/month/day formatting after advancing each weekly schedule date. This prevents a schedule generated shortly after local midnight in India from displaying the previous UTC calendar day. Add a timezone-specific regression test for 00:15 IST.
 - **Validation:** 8/8 isolated Node.js 22.16.0 tests passed under a UTC process, including a regression case that switches to Asia/Kolkata and verifies all four weekly dates. Full Firebase integration was not run.
+
+
+### Jal-Sanchaee-Navachar — Validate crop coefficients and water calculations
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:49:15 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/water-calculation-input-validation-20261124`
+- **Commit:** [`33b0aa67d1a64255c2f16d1f0e3566ed1a3a5a57`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/33b0aa67d1a64255c2f16d1f0e3566ed1a3a5a57)
+- **Pull request:** Pending diff inspection and creation.
+- **Change:** Use own-property checks for crop/stage coefficient lookups, preserve the mid-stage fallback for unknown stages, and reject negative, non-numeric, non-finite, or overflowing evapotranspiration and water-volume calculations. Add a dedicated Node test file for the exported water-calculation helpers.
+- **Validation:** 7/7 isolated Node.js 22.16.0 tests passed, covering normal coefficients, inherited keys, invalid inputs, and numeric overflow. Full Firebase integration was not run.
