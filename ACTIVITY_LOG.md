@@ -319,8 +319,8 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
 - **Branch:** `fix/strict-json-content-type-20261125`
 - **Commit:** [`4334e2f66f926af51bdce68781983670f737cd60`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/4334e2f66f926af51bdce68781983670f737cd60)
-- **Pull request:** [#5 — wait for servo to settle after obstacle scans](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5).
-- **PR opened (Asia/Kolkata):** 25/11/2026, 00:15:50 IST.
+- **Pull request:** [#3 — require exact JSON request media type](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/3).
+- **PR opened (Asia/Kolkata):** 25/11/2026, 00:13:26 IST.
 - **Change:** Replace the prefix-based `application/json` check with an exact media-type comparison that still accepts optional parameters such as `charset=utf-8`. This prevents unsupported types such as `application/jsonp` and `application/json-invalid` from being parsed and persisted as JSON. Add an HTTP regression test verifying accepted parameters, rejected lookalike types, and that rejected requests never call the persistence callback.
 - **Validation:** 8/8 HTTP server tests passed on Node.js 22.16.0 using an isolated copy of the current backend server and calculator sources. Firebase integration was not run.
 
@@ -330,7 +330,8 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
 - **Branch:** `fix/servo-center-settle-20261125`
 - **Commit:** [`30b8381ff4f1de2c6641d09d53638d9a7026850c`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/30b8381ff4f1de2c6641d09d53638d9a7026850c)
-- **Pull request:** To be recorded after PR creation.
+- **Pull request:** [#5 — wait for servo to settle after obstacle scans](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5).
+- **PR opened (Asia/Kolkata):** 25/11/2026, 00:15:50 IST.
 - **Change:** Move the unreachable 100 ms delay in `lookLeft()` before its return and add the same post-center settling delay to `lookRight()`. Both scan helpers now allow the servo to begin returning to its 115-degree center position before the next movement or scan command.
 - **Validation:** 2/2 host-side C++ stub timing assertions passed with g++ 14.2.0 and warnings-as-errors. The harness verified the right/left servo command sequence and delay placement. Arduino library compilation and physical robot testing were not available.
 
