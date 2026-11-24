@@ -312,3 +312,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 25/11/2026, 00:11:17 IST.
 - **Change:** Extract backend port, host, and Fastify log-level parsing into a pure configuration helper. Reject malformed, fractional, non-finite, and out-of-range ports rather than silently falling back to port 3000; validate supported log levels and preserve the existing defaults. Add focused regression tests and wire the validated configuration into server startup.
 - **Validation:** 4/4 isolated Node.js 22.16.0 tests passed using Node's experimental TypeScript type stripping. Full `tsx --test`, TypeScript build/typecheck, and backend integration were not run because project dependencies are not installed in this execution environment.
+
+### JalSanchaeeNavachar — Match the request media type exactly before parsing JSON
+
+- **Time (Asia/Kolkata):** 25/11/2026, 00:13:03 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `fix/strict-json-content-type-20261125`
+- **Commit:** [`4334e2f66f926af51bdce68781983670f737cd60`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/4334e2f66f926af51bdce68781983670f737cd60)
+- **Pull request:** To be recorded after PR creation.
+- **Change:** Replace the prefix-based `application/json` check with an exact media-type comparison that still accepts optional parameters such as `charset=utf-8`. This prevents unsupported types such as `application/jsonp` and `application/json-invalid` from being parsed and persisted as JSON. Add an HTTP regression test verifying accepted parameters, rejected lookalike types, and that rejected requests never call the persistence callback.
+- **Validation:** 8/8 HTTP server tests passed on Node.js 22.16.0 using an isolated copy of the current backend server and calculator sources. Firebase integration was not run.
