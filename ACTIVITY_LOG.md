@@ -205,7 +205,20 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Follow-up commit (24/11/2026, 00:03:02 IST):** [`ab0a993db1f15605cd8acd4aa24cf3baad03a1a9`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/ab0a993db1f15605cd8acd4aa24cf3baad03a1a9) — corrected the FIFO capacity regression fixture after its first local execution showed that the original 11,000 L case exactly fit the remaining 60-minute window. The fixture now uses 11,500 L so the following 1,000 L farmer correctly remains unscheduled. Validation completed: 5/5 focused Node.js 22.16.0 tests passed.
 
 
-- **Follow-up commit (24/11/2026, 00:03:42 IST):** [`0cd63e8421443fa1adb71cc3db5b75d391692557`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/0cd63e8421443fa1adb71cc3db5b75d391692557) — reused the existing `minutesToTimeString` helper from `backend/utils/dateUtils.js` instead of introducing a duplicate formatter. Validation rerun pending.
+- **Follow-up commit (24/11/2026, 00:03:42 IST):** [`0cd63e8421443fa1adb71cc3db5b75d391692557`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/0cd63e8421443fa1adb71cc3db5b75d391692557) — reused the existing `minutesToTimeString` helper from `backend/utils/dateUtils.js` instead of introducing a duplicate formatter. Validation rerun completed on the merged `main` scheduler sources: 5/5 focused Node.js 22.16.0 tests passed.
 
 
 - **Follow-up commit (24/11/2026, 00:07:08 IST):** [`ccf8d932d71b14e8558a621c2bb6000bab1b9320`](https://github.com/omjoshi-2307/Dev/commit/ccf8d932d71b14e8558a621c2bb6000bab1b9320) — reject non-empty or unverifiable HTTPX request/response event-hook lists on injected local Ollama clients, and add parameterized regression tests. This addresses a further Codex P1 finding that hooks could forward local-only request or response content.
+
+
+## 2026-11-24
+
+### Jal-Sanchaee-Navachar — Reject sparse farmer arrays with a typed validation error
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:17:04 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/reject-sparse-farmer-schedule-inputs-20261124`
+- **Commit:** [`8499e8de4f45177108d3a52f49c9b32c968a58c2`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/8499e8de4f45177108d3a52f49c9b32c968a58c2)
+- **Pull request:** Pending creation after validation and diff review.
+- **Change:** Replace `Array#forEach` validation with indexed iteration so sparse array slots are checked instead of skipped. A sparse farmer list previously passed validation and then threw an untyped `TypeError` during schedule generation; it now raises `ScheduleInputError` with the invalid index. Add a regression test.
+- **Validation:** The sparse-array failure was reproduced against the pre-change implementation. Post-change full focused test result pending.
