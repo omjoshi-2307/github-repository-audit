@@ -247,3 +247,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 24/11/2026, 23:30:19 IST.
 - **Change:** Reject non-finite numeric `Retry-After` values before clamping. A header such as `NaN` previously produced a NaN sleep duration, causing `asyncio.sleep` to raise `ValueError` instead of using the bounded exponential backoff. Add parameterized regression coverage for `NaN`, `Infinity`, and `-Infinity`.
 - **Validation:** Reproduced that `asyncio.sleep(float("nan"))` raises `ValueError`. 3/3 isolated retry-delay checks passed for non-finite values, valid numeric clamping, and malformed-header fallback. Full `tests/test_providers.py` suite not run because a complete repository checkout is unavailable.
+
+
+### Dev — Exercise non-finite Retry-After values through the provider retry loop
+
+- **Time (Asia/Kolkata):** 24/11/2026, 24/11/2026, 23:43:35 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `fix/non-finite-retry-after-20261124`
+- **Commit:** [`9e6340a22770ce68bfc5daa9eff68cfb598f6bd1`](https://github.com/omjoshi-2307/Dev/commit/9e6340a22770ce68bfc5daa9eff68cfb598f6bd1)
+- **Pull request:** [#6 — ignore non-finite Retry-After values](https://github.com/omjoshi-2307/Dev/pull/6) (existing PR updated).
+- **Change:** Add end-to-end provider retry regression cases for `NaN`, `Infinity`, and `-Infinity` Retry-After headers. Each case verifies that the provider retries successfully and sleeps using the finite configured exponential-backoff delay rather than passing a non-finite duration to asyncio.
+- **Validation:** 3/3 isolated HTTPX 0.28.1 retry-flow harness cases passed. The committed pytest tests were source-inspected; the full repository pytest suite was not run because a complete checkout is unavailable.
