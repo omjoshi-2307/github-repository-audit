@@ -282,3 +282,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **PR opened (Asia/Kolkata):** 24/11/2026, 23:49:49 IST.
 - **Change:** Use own-property checks for crop/stage coefficient lookups, preserve the mid-stage fallback for unknown stages, and reject negative, non-numeric, non-finite, or overflowing evapotranspiration and water-volume calculations. Add a dedicated Node test file for the exported water-calculation helpers.
 - **Validation:** 7/7 isolated Node.js 22.16.0 tests passed, covering normal coefficients, inherited keys, invalid inputs, and numeric overflow. Full Firebase integration was not run.
+
+
+### CivicLoop — Test backend env-file loading and shell precedence
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:51:05 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `fix/load-backend-env-file-20261124`
+- **Commit:** [`7424015ddb2fd812f3cc6c70b08e596edd2ab3a7`](https://github.com/omjoshi-2307/CivicLoop/commit/7424015ddb2fd812f3cc6c70b08e596edd2ab3a7)
+- **Pull request:** [#5 — load local env files in backend scripts](https://github.com/omjoshi-2307/CivicLoop/pull/5) (existing PR updated).
+- **Change:** Add regression tests that assert both backend start scripts load `.env` before running the server and verify Node's env-file loader preserves shell-provided variable precedence. Temporary test files are cleaned up after each test.
+- **Validation:** 2/2 isolated Node.js 22.16.0 tests passed. Full `tsx --test` suite and backend build/typecheck were not run because repository dependencies are not installed locally.
