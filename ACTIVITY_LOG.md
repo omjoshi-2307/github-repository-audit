@@ -219,6 +219,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
 - **Branch:** `fix/reject-sparse-farmer-schedule-inputs-20261124`
 - **Commit:** [`8499e8de4f45177108d3a52f49c9b32c968a58c2`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/8499e8de4f45177108d3a52f49c9b32c968a58c2)
-- **Pull request:** Pending creation after validation and diff review.
+- **Pull request:** [#4 — reject sparse farmer input arrays](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/4).
+- **PR opened (Asia/Kolkata):** 24/11/2026, 23:18:36 IST.
 - **Change:** Replace `Array#forEach` validation with indexed iteration so sparse array slots are checked instead of skipped. A sparse farmer list previously passed validation and then threw an untyped `TypeError` during schedule generation; it now raises `ScheduleInputError` with the invalid index. Add a regression test.
-- **Validation:** The sparse-array failure was reproduced against the pre-change implementation. Post-change full focused test result pending.
+- **Validation:** The sparse-array failure was reproduced against the pre-change implementation. 6/6 focused Node.js 22.16.0 tests passed after the fix; `node --check` passed for the scheduler and test file.
