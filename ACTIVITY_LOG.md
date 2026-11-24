@@ -295,4 +295,4 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Validation:** 2/2 isolated Node.js 22.16.0 tests passed. Full `tsx --test` suite and backend build/typecheck were not run because repository dependencies are not installed locally.
 
 
-- **Follow-up commit (Asia/Kolkata):** 24/11/2026, 23:52:00 IST — [`4e766af3bb180edf26cc49ebc54d49d65827728b`](https://github.com/omjoshi-2307/CivicLoop/commit/4e766af3bb180edf26cc49ebc54d49d65827728b) corrected regex and newline escaping in the env-file regression test so it matches the actual script flag and writes a valid temporary `.env` file. Validation rerun after this correction is recorded below.
+- **Follow-up commit (Asia/Kolkata):** 24/11/2026, 23:52:00 IST — [`4e766af3bb180edf26cc49ebc54d49d65827728b`](https://github.com/omjoshi-2307/CivicLoop/commit/4e766af3bb180edf26cc49ebc54d49d65827728b) corrected regex and newline escaping in the env-file regression test so it matches the actual script flag and writes a valid temporary `.env` file. Validation rerun after correction: 2/2 isolated Node.js 22.16.0 tests passed against the corrected test source.
