@@ -231,6 +231,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `fix/load-backend-env-file-20261124`
 - **Commit:** [`05aadb7428b82edea01ec9896d5ba6e4158be411`](https://github.com/omjoshi-2307/CivicLoop/commit/05aadb7428b82edea01ec9896d5ba6e4158be411)
-- **Pull request:** Pending creation after script validation and diff review.
+- **Pull request:** [#5 — load local env files in backend scripts](https://github.com/omjoshi-2307/CivicLoop/pull/5).
+- **PR opened (Asia/Kolkata):** 24/11/2026, 23:23:43 IST.
 - **Change:** The backend README instructed contributors to copy `.env.example` to `.env`, but the development and production scripts did not load that file. Use Node's built-in `--env-file-if-exists` option for both scripts, preserve shell-provided environment variable precedence, and document the behavior without adding a dependency.
-- **Validation:** Confirmed with Node.js 22.16.0 that `.env` values are absent without the flag and loaded with `--env-file-if-exists`. Package JSON parse and script execution checks pending.
+- **Validation:** Confirmed with Node.js 22.16.0 that `.env` values are absent without the flag and loaded with `--env-file-if-exists`. Updated `package.json` parsed successfully; both scripts contain the env-file flag. Node.js 22.16.0 confirmed env-file loading and shell-variable precedence. Full typecheck/build/tests not run because dependencies are not installed.
