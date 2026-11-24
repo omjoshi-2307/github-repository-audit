@@ -258,3 +258,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#6 — ignore non-finite Retry-After values](https://github.com/omjoshi-2307/Dev/pull/6) (existing PR updated).
 - **Change:** Add end-to-end provider retry regression cases for `NaN`, `Infinity`, and `-Infinity` Retry-After headers. Each case verifies that the provider retries successfully and sleeps using the finite configured exponential-backoff delay rather than passing a non-finite duration to asyncio.
 - **Validation:** 3/3 isolated HTTPX 0.28.1 retry-flow harness cases passed. The committed pytest tests were source-inspected; the full repository pytest suite was not run because a complete checkout is unavailable.
+
+
+### Jal-Sanchaee-Navachar — Preserve local calendar dates in weekly irrigation schedules
+
+- **Time (Asia/Kolkata):** 24/11/2026, 23:45:33 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/local-calendar-schedule-dates-20261124`
+- **Commit:** [`512ced1f22af3a085857ea9baa279000f5fc6a83`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/512ced1f22af3a085857ea9baa279000f5fc6a83)
+- **Pull request:** Pending diff inspection and creation.
+- **Change:** Replace UTC ISO-date slicing with local year/month/day formatting after advancing each weekly schedule date. This prevents a schedule generated shortly after local midnight in India from displaying the previous UTC calendar day. Add a timezone-specific regression test for 00:15 IST.
+- **Validation:** 8/8 isolated Node.js 22.16.0 tests passed under a UTC process, including a regression case that switches to Asia/Kolkata and verifies all four weekly dates. Full Firebase integration was not run.
