@@ -319,7 +319,8 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
 - **Branch:** `fix/strict-json-content-type-20261125`
 - **Commit:** [`4334e2f66f926af51bdce68781983670f737cd60`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/4334e2f66f926af51bdce68781983670f737cd60)
-- **Pull request:** To be recorded after PR creation.
+- **Pull request:** [#5 — wait for servo to settle after obstacle scans](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5).
+- **PR opened (Asia/Kolkata):** 25/11/2026, 00:15:50 IST.
 - **Change:** Replace the prefix-based `application/json` check with an exact media-type comparison that still accepts optional parameters such as `charset=utf-8`. This prevents unsupported types such as `application/jsonp` and `application/json-invalid` from being parsed and persisted as JSON. Add an HTTP regression test verifying accepted parameters, rejected lookalike types, and that rejected requests never call the persistence callback.
 - **Validation:** 8/8 HTTP server tests passed on Node.js 22.16.0 using an isolated copy of the current backend server and calculator sources. Firebase integration was not run.
 
