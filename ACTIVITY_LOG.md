@@ -360,3 +360,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add a polite live status to the case-study loading fallback so assistive technology announces the state; hide the decorative spinner from screen readers and disable its motion under reduced-motion preferences.
 - **Validation:** Source diff inspected. Automated frontend tests/build not run; dependencies and checkout unavailable.
 - **Pull request:** [#2 — announce case-study loading state](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/2). **PR opened (Asia/Kolkata):** 25/11/2026, 23:56:52 IST.
+
+
+### Jal-Sanchaee-Navachar — Reject duplicate farmer IDs in daily schedules
+
+- **Time (Asia/Kolkata):** 25/11/2026, 23:57:58 IST (source commit log update)
+- **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
+- **Branch:** `fix/reject-sparse-farmer-schedule-inputs-20261124`
+- **Commit:** [`de4501be89cdb28be55160dc1114e297780aab99`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/de4501be89cdb28be55160dc1114e297780aab99)
+- **Change:** Extend the scheduler's existing indexed validation to reject duplicate farmer IDs (including duplicates after trimming surrounding whitespace) before any time slots are allocated, preventing multiple entries from being scheduled against the same farmer identifier. Add two regression tests.
+- **Validation:** 8/8 focused Node.js tests passed locally, including existing empty/FIFO/12-hour-window/sparse-input tests and the two duplicate-ID cases. Tests were run against an isolated copy of the PR branch sources; no Firebase integration.
+- **PR:** existing [#4 — reject sparse farmer input arrays](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/4) updated.
