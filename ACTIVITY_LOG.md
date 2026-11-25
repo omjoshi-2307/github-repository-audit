@@ -348,4 +348,4 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`2df1396850aeb38d0657ddbf157a0fbdcc86abb7`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2df1396850aeb38d0657ddbf157a0fbdcc86abb7)
 - **Change:** Replace permissive `Number(PORT) || 5000` startup parsing with a pure helper that accepts blank/default or integer ports 1–65535 and rejects malformed, fractional, zero, and out-of-range values. Add four Node built-in regression tests.
 - **Validation:** 4/4 local Node.js tests passed for the isolated helper. Repository dependencies and Firebase integration were not installed/run.
-- **PR:** pending.
+- **Pull request:** [#4 — validate backend port configuration](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/4). **PR opened (Asia/Kolkata):** 25/11/2026, 23:56:18 IST.
