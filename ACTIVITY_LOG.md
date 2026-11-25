@@ -349,3 +349,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Replace permissive `Number(PORT) || 5000` startup parsing with a pure helper that accepts blank/default or integer ports 1–65535 and rejects malformed, fractional, zero, and out-of-range values. Add four Node built-in regression tests.
 - **Validation:** 4/4 local Node.js tests passed for the isolated helper. Repository dependencies and Firebase integration were not installed/run.
 - **Pull request:** [#4 — validate backend port configuration](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/4). **PR opened (Asia/Kolkata):** 25/11/2026, 23:56:18 IST.
+
+
+### Portfolio OLD — Announce lazy case-study loading accessibly
+
+- **Time (Asia/Kolkata):** 25/11/2026, 23:56:43 IST (source commit log update)
+- **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
+- **Branch:** `fix/a11y-case-study-loading-20261125-run8`
+- **Commit:** [`010c2e7bd45826bb902cd26eaa603ef8b57935c`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/010c2e7bd45826bb902cd26eaa603ef8b57935c)
+- **Change:** Add a polite live status to the case-study loading fallback so assistive technology announces the state; hide the decorative spinner from screen readers and disable its motion under reduced-motion preferences.
+- **Validation:** Source diff inspected. Automated frontend tests/build not run; dependencies and checkout unavailable.
+- **PR:** pending.
