@@ -371,3 +371,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Extend the scheduler's existing indexed validation to reject duplicate farmer IDs (including duplicates after trimming surrounding whitespace) before any time slots are allocated, preventing multiple entries from being scheduled against the same farmer identifier. Add two regression tests.
 - **Validation:** 8/8 focused Node.js tests passed locally, including existing empty/FIFO/12-hour-window/sparse-input tests and the two duplicate-ID cases. Tests were run against an isolated copy of the PR branch sources; no Firebase integration.
 - **PR:** existing [#4 — reject sparse farmer input arrays](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/pull/4) updated.
+
+
+### CivicLoop — Add backend test and type-check CI
+
+- **Time (Asia/Kolkata):** 25/11/2026, 23:58:45 IST (source commit log update)
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `ci/backend-tests-20261125-run8`
+- **Commit:** [`7ef1fe3c3ae862c3e0a347ba65e5de52345908b4`](https://github.com/omjoshi-2307/CivicLoop/commit/7ef1fe3c3ae862c3e0a347ba65e5de52345908b4)
+- **Change:** Add a GitHub Actions backend CI workflow that installs the backend lockfile with Node.js 22, runs the existing backend tests, and type-checks the backend on relevant PRs and main pushes. The repository had no workflow directory.
+- **Validation:** Workflow source inspected; execution awaits GitHub Actions after PR creation. No local dependencies/build were run.
+- **PR:** pending.
