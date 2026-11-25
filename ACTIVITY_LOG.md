@@ -336,3 +336,16 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Validation:** 2/2 host-side C++ stub timing assertions passed with g++ 14.2.0 and warnings-as-errors using a minimal harness that mirrors the two scan helpers. This did not compile the repository sketch against the Arduino libraries or verify physical servo motion.
 
 - **Follow-up commit (Asia/Kolkata):** 25/11/2026, 00:16:34 IST — [`8bd224f0701fab4486c7708f6812ba7a09d4eb39`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/8bd224f0701fab4486c7708f6812ba7a09d4eb39) adds an HTTP regression test for the existing 100 KiB request-body limit. It verifies oversized JSON requests receive HTTP 413 and never reach the persistence callback. Validation rerun: 9/9 HTTP server tests passed on Node.js 22.16.0 in the isolated backend harness.
+
+
+## 2026-11-25
+
+### JalSanchaeeNavachar — Validate backend port configuration
+
+- **Time (Asia/Kolkata):** 25/11/2026, 23:56:05 IST (commit log update)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `fix/validate-server-port-20261125-run8`
+- **Commit:** [`2df1396850aeb38d0657ddbf157a0fbdcc86abb7`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2df1396850aeb38d0657ddbf157a0fbdcc86abb7)
+- **Change:** Replace permissive `Number(PORT) || 5000` startup parsing with a pure helper that accepts blank/default or integer ports 1–65535 and rejects malformed, fractional, zero, and out-of-range values. Add four Node built-in regression tests.
+- **Validation:** 4/4 local Node.js tests passed for the isolated helper. Repository dependencies and Firebase integration were not installed/run.
+- **PR:** pending.
