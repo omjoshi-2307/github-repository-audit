@@ -342,7 +342,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### JalSanchaeeNavachar — Validate backend port configuration
 
-- **Time (Asia/Kolkata):** 25/11/2026, 23:56:05 IST (commit log update)
+- **Time (Asia/Kolkata):** 25/11/2026, 23:55:54 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
 - **Branch:** `fix/validate-server-port-20261125-run8`
 - **Commit:** [`2df1396850aeb38d0657ddbf157a0fbdcc86abb7`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2df1396850aeb38d0657ddbf157a0fbdcc86abb7)
@@ -353,7 +353,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Portfolio OLD — Announce lazy case-study loading accessibly
 
-- **Time (Asia/Kolkata):** 25/11/2026, 23:56:43 IST (source commit log update)
+- **Time (Asia/Kolkata):** 25/11/2026, 23:56:38 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
 - **Branch:** `fix/a11y-case-study-loading-20261125-run8`
 - **Commit:** [`010c2e7bd45826bb902cd26eaa603ef8b57935c`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/010c2e7bd45826bb902cd26eaa603ef8b57935c)
@@ -364,7 +364,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Jal-Sanchaee-Navachar — Reject duplicate farmer IDs in daily schedules
 
-- **Time (Asia/Kolkata):** 25/11/2026, 23:57:58 IST (source commit log update)
+- **Time (Asia/Kolkata):** 25/11/2026, 23:57:49 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/Jal-Sanchaee-Navachar](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar)
 - **Branch:** `fix/reject-sparse-farmer-schedule-inputs-20261124`
 - **Commit:** [`de4501be89cdb28be55160dc1114e297780aab99`](https://github.com/omjoshi-2307/Jal-Sanchaee-Navachar/commit/de4501be89cdb28be55160dc1114e297780aab99)
@@ -375,7 +375,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### CivicLoop — Add backend test and type-check CI
 
-- **Time (Asia/Kolkata):** 25/11/2026, 23:58:45 IST (source commit log update)
+- **Time (Asia/Kolkata):** 25/11/2026, 23:58:39 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `ci/backend-tests-20261125-run8`
 - **Commit:** [`7ef1fe3c3ae862c3e0a347ba65e5de52345908b4`](https://github.com/omjoshi-2307/CivicLoop/commit/7ef1fe3c3ae862c3e0a347ba65e5de52345908b4)
