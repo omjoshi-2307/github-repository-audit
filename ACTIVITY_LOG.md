@@ -359,4 +359,4 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`010c2e7bd45826bb902cd26eaa603ef8b57935c`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/010c2e7bd45826bb902cd26eaa603ef8b57935c)
 - **Change:** Add a polite live status to the case-study loading fallback so assistive technology announces the state; hide the decorative spinner from screen readers and disable its motion under reduced-motion preferences.
 - **Validation:** Source diff inspected. Automated frontend tests/build not run; dependencies and checkout unavailable.
-- **PR:** pending.
+- **Pull request:** [#2 — announce case-study loading state](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/2). **PR opened (Asia/Kolkata):** 25/11/2026, 23:56:52 IST.
