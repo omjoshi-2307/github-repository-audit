@@ -462,3 +462,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:14:32 IST — [`9ead62d843be44a3fa45e98f016d324c594c22a7`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/9ead62d843be44a3fa45e98f016d324c594c22a7) adds `postcss.config.*` and `tailwind.config.*` to both pull-request and main-push path filters, addressing the Codex P2 finding that CSS build-configuration-only changes could skip CI. Validation: inspected both path lists and the focused diff; a new workflow run is pending.
+
+
+### Final CI and review results — 27 November 2026
+
+- **Observed at:** 27/11/2026, 00:15:04 IST.
+- **CivicLoop PR #7:** Node.js 26 backend workflow passed on `3b036d6abd4dfc78231f2b9dad094c8f7fdd0200`; backend test step and TypeScript type-check succeeded. The Codex Node-version finding is resolved. A fresh Codex review was requested. Merge remains blocked by the repository's required project-lead approval and unavailable branch-protection verification.
+- **Portfolio OLD PR #2:** Latest Vercel Preview Comments check passed on `91fb63042b4dd5097629c1ce39c08f50b839b658`; both Codex accessibility threads are resolved. No frontend build or test run is claimed.
+- **Dev PR #7:** Python 3.11 GitHub Actions job passed on `5ed83115feccbe5b03771c547f6c85cd44676b41`: **186 passed, 1 warning**.
+- **JalSanchaeeNavachar PR #5:** Latest GitHub Actions `quality` job passed on `9ead62d843be44a3fa45e98f016d324c594c22a7`. `npm ci` installed 379 packages; backend tests **15 passed, 0 failed**; ESLint **0 errors, 174 warnings** (legacy unused declarations remain visible); Vite production build succeeded in 6.09 seconds. Vite emitted a bundle-size warning for the 1.32 MB JavaScript bundle (407.48 kB gzip). All three Codex findings (ESLint config, frontend dependencies/lockfile, PostCSS/Tailwind path filters) were resolved after the successful run. The package/lockfile update commit `33cc540becd21a4df305030b3e4227f43a2e3442` was co-authored by `copilot-swe-agent[bot]` and remains separately identified from assistant-authored commits.
+- **Merge decisions:** No PR merged. Dev #7 and JalSanchaeeNavachar #5 were opened in this run and remain inside the 12-hour waiting window. Older PRs remain open because required human approval and branch-protection requirements could not be fully verified; CivicLoop also explicitly requires project-lead approval.
