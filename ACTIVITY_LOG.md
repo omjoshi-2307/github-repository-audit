@@ -384,6 +384,8 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7). **PR opened (Asia/Kolkata):** 25/11/2026, 23:58:53 IST.
 
 
+## 2026-11-26
+
 ### CivicLoop — Run backend CI on the documented Node.js 26 baseline
 
 - **Time (Asia/Kolkata):** 26/11/2026, 23:57:33 IST (source commit timestamp)
@@ -405,6 +407,8 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Address Codex P2 feedback by removing `aria-busy="true"` from the transient `role="status"` fallback. The polite status can now be announced immediately instead of being held while marked busy and then unmounted when the lazy route resolves. Decorative spinner and reduced-motion handling remain unchanged.
 - **Validation:** Inspected the one-attribute diff. Frontend tests and production build were not run because no checkout/dependencies are available in this execution environment; fresh Codex review requested after the update.
 
+
+## 2026-11-27
 
 ### Dev — Add Python 3.11 test automation
 
@@ -472,3 +476,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Dev PR #7:** Python 3.11 GitHub Actions job passed on `5ed83115feccbe5b03771c547f6c85cd44676b41`: **186 passed, 1 warning**.
 - **JalSanchaeeNavachar PR #5:** Latest GitHub Actions `quality` job passed on `9ead62d843be44a3fa45e98f016d324c594c22a7`. `npm ci` installed 379 packages; backend tests **15 passed, 0 failed**; ESLint **0 errors, 174 warnings** (legacy unused declarations remain visible); Vite production build succeeded in 6.09 seconds. Vite emitted a bundle-size warning for the 1.32 MB JavaScript bundle (407.48 kB gzip). All three Codex findings (ESLint config, frontend dependencies/lockfile, PostCSS/Tailwind path filters) were resolved after the successful run. The package/lockfile update commit `33cc540becd21a4df305030b3e4227f43a2e3442` was co-authored by `copilot-swe-agent[bot]` and remains separately identified from assistant-authored commits.
 - **Merge decisions:** No PR merged. Dev #7 and JalSanchaeeNavachar #5 were opened in this run and remain inside the 12-hour waiting window. Older PRs remain open because required human approval and branch-protection requirements could not be fully verified; CivicLoop also explicitly requires project-lead approval.
+
+### Dev — Disable persisted checkout credentials after review finding
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:24:41 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `ci/python-tests-20261126`
+- **Commit:** [`ce419e883f1551b482ea9089286b6d751a148e35`](https://github.com/omjoshi-2307/Dev/commit/ce419e883f1551b482ea9089286b6d751a148e35)
+- **Pull request:** [#7 — Python 3.11 pytest CI](https://github.com/omjoshi-2307/Dev/pull/7) (existing PR updated)
+- **Change:** Address the Codex P2 finding by setting `persist-credentials: false` on `actions/checkout@v4`. No later workflow step requires authenticated Git, so the read-only checkout token is no longer persisted in Git configuration while dependency installation and tests execute.
+- **Validation:** Inspected the updated workflow and confirmed the setting is scoped to the checkout step. GitHub Actions must rerun on the new PR head; no local workflow execution was possible.
