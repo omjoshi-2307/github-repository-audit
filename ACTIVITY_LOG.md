@@ -435,3 +435,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:05:05 IST — [`0eeb8d2ebffa1d613ef61de398031a06b79c2663`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/0eeb8d2ebffa1d613ef61de398031a06b79c2663) adjusts the new ESLint baseline after the first lint run reported 164 pre-existing unused declarations across the legacy UI. These remain visible as warnings instead of blocking the workflow; React Hooks violations remain errors, and the unused declarations can be cleaned incrementally in focused UI changes. Validation: the failed CI log was inspected; a fresh run is pending.
+
+
+- **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:07:52 IST — [`2dcdcd743c8899d5f675c63231b094cb07d86753`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2dcdcd743c8899d5f675c63231b094cb07d86753) fixes the two existing JavaScript errors uncovered by the new lint job: remove the duplicate/default Clock import and repeated Droplets import in `HistoryDashboard.jsx`, and scope the humidity `switch` case in `src/pages/Dashboard/Dashboard.jsx` so its `const` declaration is legal. These are narrow syntax/import fixes; existing unused declarations remain warnings. Validation: exact CI-reported locations inspected and source changes checked; fresh workflow run pending.
