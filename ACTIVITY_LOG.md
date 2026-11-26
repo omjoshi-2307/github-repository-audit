@@ -386,10 +386,21 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### CivicLoop — Run backend CI on the documented Node.js 26 baseline
 
-- **Time (Asia/Kolkata):** timestamp unavailable IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 26/11/2026, 23:57:33 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `ci/backend-tests-20261125-run8`
 - **Commit:** [`3b036d6abd4dfc78231f2b9dad094c8f7fdd0200`](https://github.com/omjoshi-2307/CivicLoop/commit/3b036d6abd4dfc78231f2b9dad094c8f7fdd0200)
 - **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7) (existing PR updated)
 - **Change:** Address Codex P2 feedback by changing the backend CI runtime from Node.js 22 to Node.js 26, matching the repository's documented Node.js 26 LTS baseline. Test, typecheck, lockfile caching, and read-only workflow permissions are unchanged.
 - **Validation:** Workflow source inspected. GitHub Actions must rerun on the new PR head; no local dependency install or backend test/typecheck was run in this environment.
+
+
+### Portfolio OLD — Remove aria-busy from transient loading status
+
+- **Time (Asia/Kolkata):** 26/11/2026, 23:58:20 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
+- **Branch:** `fix/a11y-case-study-loading-20261125-run8`
+- **Commit:** [`5da9d6aae399829b3eb6c44f9532e03bb984c790`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/5da9d6aae399829b3eb6c44f9532e03bb984c790)
+- **Pull request:** [#2 — announce case-study loading state](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/2) (existing PR updated)
+- **Change:** Address Codex P2 feedback by removing `aria-busy="true"` from the transient `role="status"` fallback. The polite status can now be announced immediately instead of being held while marked busy and then unmounted when the lazy route resolves. Decorative spinner and reduced-motion handling remain unchanged.
+- **Validation:** Inspected the one-attribute diff. Frontend tests and production build were not run because no checkout/dependencies are available in this execution environment; fresh Codex review requested after the update.
