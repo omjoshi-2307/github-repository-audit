@@ -382,3 +382,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add a GitHub Actions backend CI workflow that installs the backend lockfile with Node.js 22, runs the existing backend tests, and type-checks the backend on relevant PRs and main pushes. The repository had no workflow directory.
 - **Validation:** Workflow source inspected; execution awaits GitHub Actions after PR creation. No local dependencies/build were run.
 - **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7). **PR opened (Asia/Kolkata):** 25/11/2026, 23:58:53 IST.
+
+
+### CivicLoop — Run backend CI on the documented Node.js 26 baseline
+
+- **Time (Asia/Kolkata):** timestamp unavailable IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `ci/backend-tests-20261125-run8`
+- **Commit:** [`3b036d6abd4dfc78231f2b9dad094c8f7fdd0200`](https://github.com/omjoshi-2307/CivicLoop/commit/3b036d6abd4dfc78231f2b9dad094c8f7fdd0200)
+- **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7) (existing PR updated)
+- **Change:** Address Codex P2 feedback by changing the backend CI runtime from Node.js 22 to Node.js 26, matching the repository's documented Node.js 26 LTS baseline. Test, typecheck, lockfile caching, and read-only workflow permissions are unchanged.
+- **Validation:** Workflow source inspected. GitHub Actions must rerun on the new PR head; no local dependency install or backend test/typecheck was run in this environment.
