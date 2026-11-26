@@ -506,3 +506,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#5 — run Node.js tests, lint, and build](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/5) (existing PR updated)
 - **Change:** Set `persist-credentials: false` on `actions/checkout@v4` so the read-only checkout token is not retained while npm dependencies, tests, lint, and build scripts execute. No subsequent workflow step needs authenticated Git.
 - **Validation:** Inspected the workflow diff and confirmed the option is scoped to the checkout step. Updated quality workflow run is pending; no local workflow execution was available.
+
+### Portfolio OLD — Add regression coverage for accessible lazy-route loading
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:27:57 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
+- **Branch:** `fix/a11y-case-study-loading-20261125-run8`
+- **Commit:** [`48d76b7ecda8909a81cb915815018afcd1fc1132`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/48d76b7ecda8909a81cb915815018afcd1fc1132)
+- **Pull request:** [#2 — announce case-study loading state](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/2) (existing PR updated)
+- **Change:** Add a Node.js regression test for the lazy-route fallback's polite status semantics, decorative spinner accessibility, reduced-motion class, route-specific labels, and absence of the transient `aria-busy` attribute.
+- **Validation:** Test source and assertions inspected. The test is wired into the existing `npm test` command through `project-validation.test.mjs`; execution is pending because no local repository checkout/dependencies are attached.
