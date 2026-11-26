@@ -438,3 +438,12 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 
 - **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:07:52 IST — [`2dcdcd743c8899d5f675c63231b094cb07d86753`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/2dcdcd743c8899d5f675c63231b094cb07d86753) fixes the two existing JavaScript errors uncovered by the new lint job: remove the duplicate/default Clock import and repeated Droplets import in `HistoryDashboard.jsx`, and scope the humidity `switch` case in `src/pages/Dashboard/Dashboard.jsx` so its `const` declaration is legal. These are narrow syntax/import fixes; existing unused declarations remain warnings. Validation: exact CI-reported locations inspected and source changes checked; fresh workflow run pending.
+
+
+### Run 9 validation follow-up — 27 November 2026
+
+- **CivicLoop PR #7:** Updated head `3b036d6abd4dfc78231f2b9dad094c8f7fdd0200`; GitHub Actions `backend` check completed successfully. The Node.js 26 baseline finding was fixed and its outdated review thread was resolved. A fresh Codex review was requested.
+- **Portfolio OLD PR #2:** Updated head `91fb63042b4dd5097629c1ce39c08f50b839b658`; Vercel preview check completed successfully. The P2 live-region and P3 route-copy findings were fixed and both outdated threads were resolved. A fresh Codex review was requested. Frontend build/test execution remains unverified; Vercel's check reports preview feedback only.
+- **Dev PR #7:** Updated head `5ed83115feccbe5b03771c547f6c85cd44676b41`; GitHub Actions `tests` check completed successfully. The workflow installs the README-declared dependencies and runs the documented pytest suite.
+- **JalSanchaeeNavachar PR #5:** Updated head `2dcdcd743c8899d5f675c63231b094cb07d86753`; GitHub Actions backend tests passed **15/15**, ESLint completed with **174 existing warnings and 0 errors**, but the Vite build failed because `react-router-dom` is imported by `src/main.jsx` and `src/routes/index.jsx` but is absent from both `package.json` and `package-lock.json`. No dependency/lockfile edit was made because a reproducible lockfile could not be generated in this environment. PR remains open with this concrete blocker.
+- **Merge decisions:** No PR merged. Branch-protection/required-review settings could not be independently verified through the available GitHub integration, and CivicLoop's contribution guide explicitly requires project-lead approval before merge.
