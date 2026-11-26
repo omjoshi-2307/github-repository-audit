@@ -459,3 +459,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Authorship note:** GitHub reports `omjoshi-2307` as commit author, `web-flow` as committer, and `copilot-swe-agent[bot]` as co-author. This is recorded separately from the assistant-authored commit count.
 - **Change:** Added the missing app/build dependencies (including `react-router-dom` and `lucide-react`) and regenerated `package-lock.json` to address the Vite unresolved-import finding. The commit modifies only `package.json` and `package-lock.json`.
 - **Validation:** No check runs were present for this commit at inspection time; build/install validation is pending.
+
+
+- **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:14:32 IST — [`9ead62d843be44a3fa45e98f016d324c594c22a7`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/9ead62d843be44a3fa45e98f016d324c594c22a7) adds `postcss.config.*` and `tailwind.config.*` to both pull-request and main-push path filters, addressing the Codex P2 finding that CSS build-configuration-only changes could skip CI. Validation: inspected both path lists and the focused diff; a new workflow run is pending.
