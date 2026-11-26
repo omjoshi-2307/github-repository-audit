@@ -496,3 +496,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7) (existing PR updated)
 - **Change:** Set `persist-credentials: false` for `actions/checkout@v4` so the read-only checkout token is not left in Git configuration while backend dependencies and tests execute. No later step needs authenticated Git.
 - **Validation:** Inspected the workflow diff and confirmed the option is attached to the checkout step. Updated GitHub Actions run is pending; no local workflow execution was available.
+
+### JalSanchaeeNavachar — Disable persisted checkout credentials in Node.js CI
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:26:18 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `ci/node-checks-20261126`
+- **Commit:** [`36d34402b0e8e848c5e416cd32174b875f8f001a`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/36d34402b0e8e848c5e416cd32174b875f8f001a)
+- **Pull request:** [#5 — run Node.js tests, lint, and build](https://github.com/omjoshi-2307/JalSanchaeeNavachar/pull/5) (existing PR updated)
+- **Change:** Set `persist-credentials: false` on `actions/checkout@v4` so the read-only checkout token is not retained while npm dependencies, tests, lint, and build scripts execute. No subsequent workflow step needs authenticated Git.
+- **Validation:** Inspected the workflow diff and confirmed the option is scoped to the checkout step. Updated quality workflow run is pending; no local workflow execution was available.
