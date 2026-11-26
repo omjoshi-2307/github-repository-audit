@@ -414,3 +414,4 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`5ed83115feccbe5b03771c547f6c85cd44676b41`](https://github.com/omjoshi-2307/Dev/commit/5ed83115feccbe5b03771c547f6c85cd44676b41)
 - **Change:** Add a least-privilege GitHub Actions workflow for pull requests and pushes to `main` affecting backend code, tests, dependencies, or the workflow. It installs the existing `requirements.txt` under the README's Python 3.11+ baseline and runs the documented `python -m pytest -q` command.
 - **Validation:** Workflow source inspected against the README test command and dependency manifest. CI has not yet run; no local dependency installation or full pytest suite was available in this run.
+- **Pull request:** [#7 — Python 3.11 pytest CI](https://github.com/omjoshi-2307/Dev/pull/7). **PR opened (Asia/Kolkata):** 27/11/2026, 00:00:30 IST.
