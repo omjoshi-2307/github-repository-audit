@@ -415,3 +415,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add a least-privilege GitHub Actions workflow for pull requests and pushes to `main` affecting backend code, tests, dependencies, or the workflow. It installs the existing `requirements.txt` under the README's Python 3.11+ baseline and runs the documented `python -m pytest -q` command.
 - **Validation:** Workflow source inspected against the README test command and dependency manifest. CI has not yet run; no local dependency installation or full pytest suite was available in this run.
 - **Pull request:** [#7 — Python 3.11 pytest CI](https://github.com/omjoshi-2307/Dev/pull/7). **PR opened (Asia/Kolkata):** 27/11/2026, 00:00:30 IST.
+
+
+### JalSanchaeeNavachar — Add Node.js quality-check workflow
+
+- **Time (Asia/Kolkata):** 27/11/2026, 00:01:00 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
+- **Branch:** `ci/node-checks-20261126`
+- **Commit:** [`ce74760d265c0bda1eb0ac08be6a87021640ca6d`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/ce74760d265c0bda1eb0ac08be6a87021640ca6d)
+- **Change:** Add a least-privilege GitHub Actions workflow for pull requests and pushes to `main`. It uses Node.js 22, installs the committed lockfile with `npm ci`, and runs the repository's documented `npm test`, `npm run lint`, and `npm run build` checks. Path filters cover backend, frontend, package manifests, Vite/ESLint configuration, and the workflow itself.
+- **Validation:** Workflow source inspected against the README's Node.js 22.12+ prerequisite and existing npm scripts. GitHub Actions has not yet run; no local install/lint/build was available in this environment.
