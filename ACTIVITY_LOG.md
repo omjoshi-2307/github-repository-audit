@@ -486,3 +486,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#7 — Python 3.11 pytest CI](https://github.com/omjoshi-2307/Dev/pull/7) (existing PR updated)
 - **Change:** Address the Codex P2 finding by setting `persist-credentials: false` on `actions/checkout@v4`. No later workflow step requires authenticated Git, so the read-only checkout token is no longer persisted in Git configuration while dependency installation and tests execute.
 - **Validation:** Inspected the updated workflow and confirmed the setting is scoped to the checkout step. GitHub Actions must rerun on the new PR head; no local workflow execution was possible.
+
+### CivicLoop — Disable persisted checkout credentials in backend CI
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:26:02 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
+- **Branch:** `ci/backend-tests-20261125-run8`
+- **Commit:** [`4059ca004de0b4d3dadb3fb86f4f7564c99e3b6d`](https://github.com/omjoshi-2307/CivicLoop/commit/4059ca004de0b4d3dadb3fb86f4f7564c99e3b6d)
+- **Pull request:** [#7 — run backend tests and typecheck](https://github.com/omjoshi-2307/CivicLoop/pull/7) (existing PR updated)
+- **Change:** Set `persist-credentials: false` for `actions/checkout@v4` so the read-only checkout token is not left in Git configuration while backend dependencies and tests execute. No later step needs authenticated Git.
+- **Validation:** Inspected the workflow diff and confirmed the option is attached to the checkout step. Updated GitHub Actions run is pending; no local workflow execution was available.
