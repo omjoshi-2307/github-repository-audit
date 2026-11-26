@@ -404,3 +404,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#2 — announce case-study loading state](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/2) (existing PR updated)
 - **Change:** Address Codex P2 feedback by removing `aria-busy="true"` from the transient `role="status"` fallback. The polite status can now be announced immediately instead of being held while marked busy and then unmounted when the lazy route resolves. Decorative spinner and reduced-motion handling remain unchanged.
 - **Validation:** Inspected the one-attribute diff. Frontend tests and production build were not run because no checkout/dependencies are available in this execution environment; fresh Codex review requested after the update.
+
+
+### Dev — Add Python 3.11 test automation
+
+- **Time (Asia/Kolkata):** 27/11/2026, 00:00:06 IST (source commit timestamp)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `ci/python-tests-20261126`
+- **Commit:** [`5ed83115feccbe5b03771c547f6c85cd44676b41`](https://github.com/omjoshi-2307/Dev/commit/5ed83115feccbe5b03771c547f6c85cd44676b41)
+- **Change:** Add a least-privilege GitHub Actions workflow for pull requests and pushes to `main` affecting backend code, tests, dependencies, or the workflow. It installs the existing `requirements.txt` under the README's Python 3.11+ baseline and runs the documented `python -m pytest -q` command.
+- **Validation:** Workflow source inspected against the README test command and dependency manifest. CI has not yet run; no local dependency installation or full pytest suite was available in this run.
