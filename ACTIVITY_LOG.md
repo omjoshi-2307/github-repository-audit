@@ -527,7 +527,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Branch:** `ci/portfolio-tests-20261127-run10`
 - **Commit:** [`e263b3c8c914c3b374d1bae6967d70c1767c7057`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/e263b3c8c914c3b374d1bae6967d70c1767c7057)
 - **Change:** Add a read-only GitHub Actions workflow for pull requests and pushes to main. It installs the locked dependencies with Node.js 22, runs the existing regression tests, lint, and production build. Checkout credentials are not persisted.
-- **Validation:** Workflow YAML inspected; full npm tests/lint/build are pending the first CI run.
+- **Validation:** GitHub Actions [run 46048015573](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/actions/runs/46048015573) completed successfully, covering `npm ci`, regression tests, lint, and production build. Vercel and CodeRabbit statuses also succeeded.
 
 - **PR opened (Asia/Kolkata):** 27/11/2026, 23:44:58 IST — [#3 — CI tests, lint, and build](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/3)
 
@@ -563,7 +563,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8)
 - **Pull request:** [#5 — servo scan settle delay fix](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5) (existing PR updated).
 - **Change:** Add a host C++ regression harness that includes the actual robot source with lightweight Arduino-library stubs. Assert both scan directions command the correct angle, return to center, and include the center-settle delay; also test the no-echo distance normalization. Add a read-only GitHub Actions workflow to compile and run it with warnings-as-errors.
-- **Validation:** 3/3 host cases passed locally with g++ 14.2.0, `-std=c++17 -Wall -Wextra -Werror`. CI run pending.
+- **Validation:** 3/3 host cases passed locally against a temporary copy of the fetched PR-head source with g++ 14.2.0 and `-std=c++17 -Wall -Wextra -Werror`. GitHub Actions [run 46048659691](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/actions/runs/46048659691) completed successfully, compiling the checked-in source and running the harness.
 
 
 - **Follow-up commit (Asia/Kolkata):** 27/11/2026, 23:52:31 IST — [`0285af317cfe17cfdb6d40765e57ebf4ac4dae97`](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/commit/0285af317cfe17cfdb6d40765e57ebf4ac4dae97) on `feat/backend-foundation-20261127-run10` adds root ignore rules for Node dependencies, backend build output, local env files, and logs, and removes an unused app-module import. This is a setup correction to the same V2 PR #1. Validation: configuration tests remain 5/5 passed; npm dependency installation still timed out, so health tests/build remain pending.
