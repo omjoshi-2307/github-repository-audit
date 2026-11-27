@@ -564,3 +564,6 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#5 — servo scan settle delay fix](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5) (existing PR updated).
 - **Change:** Add a host C++ regression harness that includes the actual robot source with lightweight Arduino-library stubs. Assert both scan directions command the correct angle, return to center, and include the center-settle delay; also test the no-echo distance normalization. Add a read-only GitHub Actions workflow to compile and run it with warnings-as-errors.
 - **Validation:** 3/3 host cases passed locally with g++ 14.2.0, `-std=c++17 -Wall -Wextra -Werror`. CI run pending.
+
+
+- **Follow-up commit (Asia/Kolkata):** 27/11/2026, 23:52:31 IST — [`0285af317cfe17cfdb6d40765e57ebf4ac4dae97`](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/commit/0285af317cfe17cfdb6d40765e57ebf4ac4dae97) on `feat/backend-foundation-20261127-run10` adds root ignore rules for Node dependencies, backend build output, local env files, and logs, and removes an unused app-module import. This is a setup correction to the same V2 PR #1. Validation: configuration tests remain 5/5 passed; npm dependency installation still timed out, so health tests/build remain pending.
