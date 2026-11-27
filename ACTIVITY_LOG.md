@@ -518,3 +518,13 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Validation:** Test source and assertions inspected. The test is wired into the existing `npm test` command through `project-validation.test.mjs`; execution is pending because no local repository checkout/dependencies are attached.
 
 - **Follow-up commit (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:28:28 IST — [`3433d5652ce8f0bb2c39797295f620336945f087`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/3433d5652ce8f0bb2c39797295f620336945f087) corrects escaping in the new lazy-loading accessibility regression assertions so the regular expressions match whitespace and literal periods as intended. Validation: inspected the resulting test source; execution remains pending without a checkout/runtime.
+
+
+### Portfolio OLD — Add automated tests, lint, and build checks
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:44:41 IST (source commit created during this run)
+- **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
+- **Branch:** `ci/portfolio-tests-20261127-run10`
+- **Commit:** [`e263b3c8c914c3b374d1bae6967d70c1767c7057`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/e263b3c8c914c3b374d1bae6967d70c1767c7057)
+- **Change:** Add a read-only GitHub Actions workflow for pull requests and pushes to main. It installs the locked dependencies with Node.js 22, runs the existing regression tests, lint, and production build. Checkout credentials are not persisted.
+- **Validation:** Workflow YAML inspected; full npm tests/lint/build are pending the first CI run.
