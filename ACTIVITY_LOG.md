@@ -553,3 +553,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Pull request:** [#6 — ignore non-finite Retry-After values](https://github.com/omjoshi-2307/Dev/pull/6) (existing PR updated).
 - **Change:** Add regression tests for HTTP-date Retry-After parsing: a far-future date is capped at the 30-second bound, and a past date yields zero delay.
 - **Validation:** Test source inspected; full pytest execution not available in this environment. Existing PR #6's CI workflow is not yet merged to main, so these new cases await an automated run.
+
+
+### WALL-E — Test servo scan timing directly from the robot source
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:50:13 IST (source commit created during this run)
+- **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
+- **Branch:** `fix/servo-center-settle-20261125`
+- **Commit:** [`cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8)
+- **Pull request:** [#5 — servo scan settle delay fix](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/pull/5) (existing PR updated).
+- **Change:** Add a host C++ regression harness that includes the actual robot source with lightweight Arduino-library stubs. Assert both scan directions command the correct angle, return to center, and include the center-settle delay; also test the no-echo distance normalization. Add a read-only GitHub Actions workflow to compile and run it with warnings-as-errors.
+- **Validation:** 3/3 host cases passed locally with g++ 14.2.0, `-std=c++17 -Wall -Wextra -Werror`. CI run pending.
