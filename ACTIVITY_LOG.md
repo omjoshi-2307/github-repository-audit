@@ -542,3 +542,14 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Validation:** 5/5 port/config tests passed with Node.js 22.16.0 type stripping against the local scaffold. The health-route test, typecheck, and build remain unrun because npm dependency installation timed out on registry access; no lockfile was generated.
 
 - **PR opened (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:18 IST — [#1 — V2 backend foundation](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/pull/1)
+
+
+### Dev — Cover HTTP-date Retry-After bounds
+
+- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:34 IST (source commit created during this run)
+- **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
+- **Branch:** `fix/non-finite-retry-after-20261124`
+- **Commit:** [`251cd387762f3c86aa0699322018e05f376d58e8`](https://github.com/omjoshi-2307/Dev/commit/251cd387762f3c86aa0699322018e05f376d58e8)
+- **Pull request:** [#6 — ignore non-finite Retry-After values](https://github.com/omjoshi-2307/Dev/pull/6) (existing PR updated).
+- **Change:** Add regression tests for HTTP-date Retry-After parsing: a far-future date is capped at the 30-second bound, and a past date yields zero delay.
+- **Validation:** Test source inspected; full pytest execution not available in this environment. Existing PR #6's CI workflow is not yet merged to main, so these new cases await an automated run.
