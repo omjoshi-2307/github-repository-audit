@@ -528,3 +528,5 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`e263b3c8c914c3b374d1bae6967d70c1767c7057`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/e263b3c8c914c3b374d1bae6967d70c1767c7057)
 - **Change:** Add a read-only GitHub Actions workflow for pull requests and pushes to main. It installs the locked dependencies with Node.js 22, runs the existing regression tests, lint, and production build. Checkout credentials are not persisted.
 - **Validation:** Workflow YAML inspected; full npm tests/lint/build are pending the first CI run.
+
+- **PR opened (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:44:58 IST — [#3 — CI tests, lint, and build](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/3)
