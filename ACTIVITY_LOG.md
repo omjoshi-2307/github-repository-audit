@@ -540,3 +540,5 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Commit:** [`4c63330172d292dca5eb34079511e8d533e591cf`](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/commit/4c63330172d292dca5eb34079511e8d533e591cf)
 - **Change:** Bootstrap a Fastify/TypeScript backend with an injectable health endpoint, strict integer port parsing (1–65535), loopback default host, graceful signal shutdown, setup documentation, and Node test coverage. Explicitly document that persistence, authentication, irrigation planning, weather, coordinator approval, and credits are not implemented yet.
 - **Validation:** 5/5 port/config tests passed with Node.js 22.16.0 type stripping against the local scaffold. The health-route test, typecheck, and build remain unrun because npm dependency installation timed out on registry access; no lockfile was generated.
+
+- **PR opened (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:18 IST — [#1 — V2 backend foundation](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/pull/1)
