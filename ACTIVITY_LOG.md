@@ -479,7 +479,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Dev — Disable persisted checkout credentials after review finding
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:24:41 IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 27/11/2026, 00:24:41 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
 - **Branch:** `ci/python-tests-20261126`
 - **Commit:** [`ce419e883f1551b482ea9089286b6d751a148e35`](https://github.com/omjoshi-2307/Dev/commit/ce419e883f1551b482ea9089286b6d751a148e35)
@@ -489,7 +489,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### CivicLoop — Disable persisted checkout credentials in backend CI
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:26:02 IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 27/11/2026, 00:26:02 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/CivicLoop](https://github.com/omjoshi-2307/CivicLoop)
 - **Branch:** `ci/backend-tests-20261125-run8`
 - **Commit:** [`4059ca004de0b4d3dadb3fb86f4f7564c99e3b6d`](https://github.com/omjoshi-2307/CivicLoop/commit/4059ca004de0b4d3dadb3fb86f4f7564c99e3b6d)
@@ -499,7 +499,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### JalSanchaeeNavachar — Disable persisted checkout credentials in Node.js CI
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:26:18 IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 27/11/2026, 00:26:18 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/JalSanchaeeNavachar](https://github.com/omjoshi-2307/JalSanchaeeNavachar)
 - **Branch:** `ci/node-checks-20261126`
 - **Commit:** [`36d34402b0e8e848c5e416cd32174b875f8f001a`](https://github.com/omjoshi-2307/JalSanchaeeNavachar/commit/36d34402b0e8e848c5e416cd32174b875f8f001a)
@@ -509,7 +509,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### Portfolio OLD — Add regression coverage for accessible lazy-route loading
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:27:57 IST (source commit timestamp)
+- **Time (Asia/Kolkata):** 27/11/2026, 00:27:57 IST (source commit timestamp)
 - **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
 - **Branch:** `fix/a11y-case-study-loading-20261125-run8`
 - **Commit:** [`48d76b7ecda8909a81cb915815018afcd1fc1132`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/48d76b7ecda8909a81cb915815018afcd1fc1132)
@@ -517,36 +517,36 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 - **Change:** Add a Node.js regression test for the lazy-route fallback's polite status semantics, decorative spinner accessibility, reduced-motion class, route-specific labels, and absence of the transient `aria-busy` attribute.
 - **Validation:** Test source and assertions inspected. The test is wired into the existing `npm test` command through `project-validation.test.mjs`; execution is pending because no local repository checkout/dependencies are attached.
 
-- **Follow-up commit (Asia/Kolkata):** 27/11/2026, 27/11/2026, 00:28:28 IST — [`3433d5652ce8f0bb2c39797295f620336945f087`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/3433d5652ce8f0bb2c39797295f620336945f087) corrects escaping in the new lazy-loading accessibility regression assertions so the regular expressions match whitespace and literal periods as intended. Validation: inspected the resulting test source; execution remains pending without a checkout/runtime.
+- **Follow-up commit (Asia/Kolkata):** 27/11/2026, 00:28:28 IST — [`3433d5652ce8f0bb2c39797295f620336945f087`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/3433d5652ce8f0bb2c39797295f620336945f087) corrects escaping in the new lazy-loading accessibility regression assertions so the regular expressions match whitespace and literal periods as intended. Validation: inspected the resulting test source; execution remains pending without a checkout/runtime.
 
 
 ### Portfolio OLD — Add automated tests, lint, and build checks
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:44:41 IST (source commit created during this run)
+- **Time (Asia/Kolkata):** 27/11/2026, 23:44:41 IST (source commit created during this run)
 - **Repository:** [omjoshi-2307/om-joshi-portfolio--OLD-](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-)
 - **Branch:** `ci/portfolio-tests-20261127-run10`
 - **Commit:** [`e263b3c8c914c3b374d1bae6967d70c1767c7057`](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/commit/e263b3c8c914c3b374d1bae6967d70c1767c7057)
 - **Change:** Add a read-only GitHub Actions workflow for pull requests and pushes to main. It installs the locked dependencies with Node.js 22, runs the existing regression tests, lint, and production build. Checkout credentials are not persisted.
 - **Validation:** Workflow YAML inspected; full npm tests/lint/build are pending the first CI run.
 
-- **PR opened (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:44:58 IST — [#3 — CI tests, lint, and build](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/3)
+- **PR opened (Asia/Kolkata):** 27/11/2026, 23:44:58 IST — [#3 — CI tests, lint, and build](https://github.com/omjoshi-2307/om-joshi-portfolio--OLD-/pull/3)
 
 
 ### Jal Sanchaee Navachar V2 — Establish backend health and configuration foundation
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:00 IST (source commit created during this run)
+- **Time (Asia/Kolkata):** 27/11/2026, 23:48:00 IST (source commit created during this run)
 - **Repository:** [omjoshi-2307/jal-sanchaee-navachar-v2](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2)
 - **Branch:** `feat/backend-foundation-20261127-run10`
 - **Commit:** [`4c63330172d292dca5eb34079511e8d533e591cf`](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/commit/4c63330172d292dca5eb34079511e8d533e591cf)
 - **Change:** Bootstrap a Fastify/TypeScript backend with an injectable health endpoint, strict integer port parsing (1–65535), loopback default host, graceful signal shutdown, setup documentation, and Node test coverage. Explicitly document that persistence, authentication, irrigation planning, weather, coordinator approval, and credits are not implemented yet.
 - **Validation:** 5/5 port/config tests passed with Node.js 22.16.0 type stripping against the local scaffold. The health-route test, typecheck, and build remain unrun because npm dependency installation timed out on registry access; no lockfile was generated.
 
-- **PR opened (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:18 IST — [#1 — V2 backend foundation](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/pull/1)
+- **PR opened (Asia/Kolkata):** 27/11/2026, 23:48:18 IST — [#1 — V2 backend foundation](https://github.com/omjoshi-2307/jal-sanchaee-navachar-v2/pull/1)
 
 
 ### Dev — Cover HTTP-date Retry-After bounds
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:48:34 IST (source commit created during this run)
+- **Time (Asia/Kolkata):** 27/11/2026, 23:48:34 IST (source commit created during this run)
 - **Repository:** [omjoshi-2307/Dev](https://github.com/omjoshi-2307/Dev)
 - **Branch:** `fix/non-finite-retry-after-20261124`
 - **Commit:** [`251cd387762f3c86aa0699322018e05f376d58e8`](https://github.com/omjoshi-2307/Dev/commit/251cd387762f3c86aa0699322018e05f376d58e8)
@@ -557,7 +557,7 @@ Entries use India Standard Time (Asia/Kolkata) and link to the source commit and
 
 ### WALL-E — Test servo scan timing directly from the robot source
 
-- **Time (Asia/Kolkata):** 27/11/2026, 27/11/2026, 23:50:13 IST (source commit created during this run)
+- **Time (Asia/Kolkata):** 27/11/2026, 23:50:13 IST (source commit created during this run)
 - **Repository:** [omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot)
 - **Branch:** `fix/servo-center-settle-20261125`
 - **Commit:** [`cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8`](https://github.com/omjoshi-2307/WALL-E-Autonomous-Obstacle-Avoiding-Robot/commit/cefb6b4cfa62ce80323b1ed8c0c289e6ca0963e8)
